@@ -1,0 +1,55 @@
+.not-visible() {
+  top: 50px;
+  animation-name: modaOut;
+  @keyframes modaOut {
+  0% {
+      left:(5px);
+    }
+    60% {
+      left:(-10px);
+    }
+    75% {
+      left:(25px);
+    }
+    100% {
+      left:(-3000px);
+    }
+  }
+  animation-fill-mode: forwards;
+  animation-duration: @modal-time;
+}
+
+.visible() {
+  top: 50px;
+  animation-name: modaIn;
+  @keyframes modaIn {
+    0% {
+        left:-3000px;
+      }
+      60% {
+        left:25px;
+      }
+      75% {
+        left:-10px;
+      }
+      90% {
+        left:5px;
+      }
+      100% {
+        left: 0;
+      }
+  }
+  animation-fill-mode: forwards;
+  animation-duration: @modal-time;
+}
+
+.total-width() {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.all-center () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
