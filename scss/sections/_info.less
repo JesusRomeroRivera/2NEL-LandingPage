@@ -1,0 +1,66 @@
+.info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    @media @tablet-portrait {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
+    }
+    .info-container{
+       padding: 32.5vh 6vw 20vh 7vw;
+       @media @tablet-landscape {
+           padding: 20vh 6vw 12vh 7vw;
+        }
+        @media @tablet-portrait{
+            padding: 12.5vh 6vw 12vh 7vw;
+       }
+       @media @phone-landscape {
+           padding: 7vh 7vw;
+       }
+       .info-title{
+           font-family: @principal-font;
+           font-style: italic;
+           font-size: 4.0rem;
+           text-transform: uppercase;
+           margin: 0;
+           @media @tablet-landscape {
+              font-size: 3.6rem;
+           }
+           @media @phone-landscape {
+              font-size: 3.2rem;
+           }
+       }
+       .info-text{
+           margin-top: 50px;
+           font-family: @text-font;
+           font-size: 1.8rem;
+           @media @tablet-landscape {
+               font-size: 1.7rem;
+            }
+            @media @tablet-portrait {
+                margin-top: 40px;
+                font-size: 1.6rem;
+            }
+            @media @phone-landscape {
+               margin-top: 30px;
+              font-size: 1.5rem;
+           }
+       }
+    }
+    .info-img{
+        width: 100%;
+        background-image: url(../assets/images/infoBackground.png);
+        background-size: 1300px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: -100;
+        @media @tablet-landscape {
+            background-size: 1150px auto;
+        }
+        @media @tablet-portrait {
+            background-size: 800px auto;
+        }
+
+    }
+}

@@ -1,0 +1,58 @@
+.phrase{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30vh 4vw 0 52vw;
+    height: 100vh;
+    background-image: url("../assets/images/fraseBackground.png");
+    background-size: 120% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: white;
+    @media @tablet-landscape{
+        background-size: 1070px auto;
+        padding: 30vh 4vw 0 40vw;
+    }
+    @media @tablet-portrait{
+        background-size: 840px auto;
+        padding: 20vh 4vw 0 36vw;
+        height: 75vh;
+    }
+    @media @phone-landscape{
+        background-size: 840px auto;
+        padding: 15vh 2vw 0 2vw;
+        height: 65vh;
+    }
+    .phrase-title{
+        margin: 0;
+        text-align: right;
+        font-family: @principal-font;
+        font-size: 6rem;
+        font-style: italic;
+        z-index: 1000;
+        @media @tablet-landscape{
+            font-size: 5.0rem;
+        }
+        @media @tablet-portrait{
+            font-size: 4.2rem;
+        }
+        @media @phone-landscape{
+            text-align: center;
+            font-size: 3.8rem;
+        }
+    }
+    .phrase-autor{
+        text-align: right;
+        font-family: @principal-font;
+        font-size: 3rem;
+        @media @tablet-landscape{
+            font-size: 2.6rem;
+        }
+        @media @tablet-portrait{
+            font-size: 2.2rem;
+        }
+        @media @phone-landscape{
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+}

@@ -5,10 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Krona+One&family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <header class="header">
+        <div class="header-bar">
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </div>
+        <div class="header-container">
+          <div class="header-logo">
+            <img class="header-image" src="assets/images/logo.png" alt="">     
+          </div>
+        </div>
+      </header>
+      <div class="scroll-container">
+        <section class="principal">
+          <div class="header-container">
+            <div class="header-logo">
+              <img class="header-image" src="assets/images/logo.png" alt="">
+              <h1 class="header-title">2NEL</h1>
+            </div>
+            <a href=""><button class="header-button">Inicio</button></a>
+          </div>
+          <h2 class="principal-title">Tu éxito empieza <br>con nosotros</h1>
+          <p class="principal-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          <a href="#contact"><button class="principal-button">Regístrate</button></a>
+        </section>
+        <section class="info">
+          <div class="info-container">
+            <h2 class="info-title">Acerca de 2NEL</h2>
+            <p class="info-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+               et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                 ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="info-img">
+        </section>
+        <section class="phrase">
+          <div class="phrase-color"></div>
+          <h1 class="phrase-title">"No es sobre las ideas.
+            Sino hacer que estas se vuelvan realidad"</h1>
+          <p class="phrase-autor">-Scott Belsky</p>
+        </section>
+        <section class="user">
+          <div class="user-container">
+            <div id="user-img" class="user-img emprendedor"></div>
+            <div class="user-info">
+              <p class="user-intro">Nuestro servicio está dirigido para:</p>
+              <div class="carrousel-container">
+                <p id="user-1" class="active">Emprendedor</p>
+                <p id="user-2" class="">Colaborador</p>
+                <p id="user-3" class="">Inversionista</p>
+              </div>
+              <div class="user-content">
+                <div id="content-1" class="active">
+                  <h3 class="user-title">Emprendedor</h3>
+                  <span class="user-text">Lorem ipsum dolor sit 
+                    amet, consetetur sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et dolore magna
+                      aliquyam erat, sed diam voluptua. At vero eos
+                       et accusam et justo duo dolores et ea 
+                       rebum.Lorem ipsum dolor sit 
+                       amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor.</span>
+                </div>
+                <div id="content-2" class="">
+                  <h3 class="user-title">Freelancer</h3>
+                  <span class="user-text">Lorem ipsum dolor sit 
+                    amet, consetetur sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et dolore magna
+                      aliquyam erat, sed diam voluptua. At vero eos
+                       et accusam et justo duo dolores et ea 
+                       rebum.Lorem ipsum dolor sit 
+                       amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor.</span>
+                </div>
+                <div id="content-3" class="">
+                  <h3 class="user-title">Inversor</h3>
+                  <span class="user-text">Lorem ipsum dolor sit 
+                    amet, consetetur sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et dolore magna
+                      aliquyam erat, sed diam voluptua. At vero eos
+                       et accusam et justo duo dolores et ea 
+                       rebum.Lorem ipsum dolor sit 
+                       amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact">
+          <div class="contact-container">
+            <form class="contact-form">
+              <label class="label-name" for="name">Nombre</label>
+              <input class="input-name" id="name" type="text" name="name" autocomplete="off" required>
+              <label for="email">E-mail</label>
+              <label for="phone">Telefono</label>
+              <input id="email" type="email" name="email" autocomplete="off" required>
+              <input id="phone" type="text" name="phone" autocomplete="off" required>
+              <label class="label-message" for="message">Mensaje</label>
+              <textarea class="input-message" name="" id="" cols="30" rows="10"></textarea>
+              <div class="div">
+                <button type="button" class="contact-button">Enviar</button>
+              </div>
+            </form>
+            <div class="contact-info">
+              <h3 class="contact-title">Contáctanos</h3>
+              <p class="contact-text">Lorem ipsum dolor 
+                sit amet, consetetur sadipscing elitr, sed
+                 diam nonumy eirmod tempor invidunt ut labore
+                  et dolore magna aliquyam erat, sed diam
+                <br><br><br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr y eirmod:
+              </p>
+              <h4 class="contact-phone">(+51) 01 2343-6775</h4> 
+            </div>
+          </div>
+        </section>
+      <footer class="footer">
+        <div class="footer-logo">
+          <img class="footer-image" src="assets/images/logo.png" alt="">
+          <h1 class="footer-title">2NEL</h1>
+        </div>
+        <h3 class="footer-rights">©2021. All rights reserved</h3>
+        <div class="footer-socialmedia">
+          <p class="footer-text">Encuéntranos:</p>
+          <div class="footer-images">
+            <a href="">
+              <img src="assets/images/facebook.png" alt="">
+            </a>
+            <a href="">
+              <img src="assets/images/twitter.png" alt="">
+            </a>
+            <a href="">
+              <img src="assets/images/instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -1,0 +1,99 @@
+.principal{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/images/principalBackground.png");
+    background-size: 1500px auto;
+    background-position: center center;
+    padding: 0 5.5vw 0 5.5vw;
+    color: white;
+    @media @phone-landscape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container{
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid white; 
+        margin-bottom: 10vh;   
+        @media @phone-landscape {
+            justify-content: center;
+            height: 18vh;
+        }
+        .header-logo{
+            display: flex;
+            align-items: center;
+            .header-image{
+                width: 85px;
+                height: auto;
+                margin-right: 1vw;
+                @media @phone-landscape {
+                    width: 56px;
+                }
+            }
+            .header-title{
+                @media @phone-landscape {
+                    display: none;
+                }
+                margin: 0;
+                font-family: @title-font;
+                font-size: 5.2rem;
+                color: white;
+                text-shadow: -3px 0px 0px black;
+            }
+        }
+        .header-button{
+            @media @phone-landscape {
+                display: none;
+            }
+            .button-design();
+        }
+    }
+    .principal-title{
+        font-family: @principal-font;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 7.0rem;
+        margin: 0;
+        @media @tablet-landscape {
+            font-size: 6.0rem; 
+        }
+        @media @tablet-portrait {
+            font-size: 5.0rem; 
+        }
+        @media @phone-landscape {
+            font-size: 4.0rem; 
+            text-align: center; 
+        }
+    }
+    .principal-text{
+        margin-top: 4.5rem;
+        font-family: @principal-font;
+        font-style: regular;
+        font-size: 1.5rem;
+        width: 40vw;
+        @media @tablet-landscape {
+            font-size: 1.4rem; 
+            width: 50vw;
+        }
+        @media @tablet-portrait {
+            font-size: 1.3rem;  
+            width: 56vw;
+        }
+        @media @phone-landscape {
+            width: auto;
+            margin: 3.5rem 10vw;
+            font-size: 1.1rem; 
+            text-align: center; 
+        }
+    }
+    .principal-button{
+        margin-top: 5.0rem;
+        .button-design();
+        @media @phone-landscape {
+            margin-top: 1.0rem;
+        }
+    }
+}
