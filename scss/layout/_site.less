@@ -1,8 +1,33 @@
 html{
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
 	margin : 0;
 	padding : 0;
-	width : 100%;
+	overflow: auto;
+	height: 100vh;
+    .scroll-container {
+        height: 100vh;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+		@media @tablet-landscape{
+			scroll-snap-type: none;
+		}
+    }
+
+    section{
+        scroll-snap-align: start;
+		@media @tablet-landscape{
+			scroll-snap-align: none;
+		}
+    }
+}
+.scroll-container::-webkit-scrollbar{
+	width: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb{
+	width: 8px;
+	background-color: black;
 }

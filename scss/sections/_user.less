@@ -1,0 +1,106 @@
+.user{
+    width: 100%;
+    height: 100vh;
+    @media @phone-landscape{
+        height: 120vh;
+    }
+    .user-container{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media @tablet-portrait{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .user-img{
+            width: 100%;
+            height: 100%;
+            transition: 0.8s;
+            &.emprendedor{
+                background-image: url(../assets/images/emprendedorBackground.png);
+            }
+            &.freelancer{
+                background-image: url(../assets/images/freeLancerBackground.png);
+            }
+            &.investor{
+                background-image: url(../assets/images/investorBackground.png);
+            }
+            background-size: auto 100%;
+            @media @tablet-portrait{
+                background-size: 100% auto;
+            }
+            @media @phone-landscape{
+                background-size: auto 100%;
+            }
+            background-position: center;
+        }
+        .user-info{
+            width: 100%;
+            height: 100%;
+            padding: 20vh 10vw 0 5vw;
+            @media @tablet-landscape{
+                padding: 20vh 5vw 0 5vw;
+            }  
+            @media @tablet-portrait{
+                padding: 8vh 5vw 0 5vw;
+                height: auto;
+            }
+            .user-intro{
+                font-family: @principal-font;
+                font-size: 1.7rem;
+                margin-bottom: 2rem;
+            }
+            .carrousel-container{
+                width: 100%;
+                display: flex; 
+                justify-content: space-between;
+                p{
+                    color: black;
+                    margin: 0;
+                    font-family: @principal-font;
+                    font-size: 1.6rem;
+                    padding-bottom: 1rem;
+                    width: 100%;
+                    border-bottom: 2px solid @soft-gray;
+                    @media @phone-landscape{
+                        font-size: 1.4rem;
+                    }
+                    &:hover, &.active{
+                        cursor: pointer;
+                        color: black;
+                        text-decoration: none;
+                        transition: 0.7s;
+                        border-bottom: 2px solid @strong-gray;
+                    }  
+                }
+            }
+            .user-content{
+                width: 100%;
+                margin-top: 2.5rem;
+                @media @tablet-portrait{
+                    height: 30vh;
+                }
+                div{
+                    display: none;
+                    height: 100%;
+                    &.active{
+                        transition: 1s;
+                        display: block;
+                    }
+                    .user-title{
+                        font-size: 2.8rem;
+                        font-family: @principal-font;
+                        margin: 0;
+                        margin-bottom: 2rem;
+                    }
+                    .user-text{
+                        margin: 0;
+                        font-family: @text-font;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

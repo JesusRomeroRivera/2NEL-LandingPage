@@ -1,0 +1,98 @@
+.contact{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/images/contactBackground.png);
+    background-size: cover;
+    @media @tablet-portrait{
+        height: 130vh;
+    }
+    @media @phone-landscape{
+        height: 140vh;
+    }
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media @tablet-portrait{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 40px;
+            grid-template-areas: "Text" "Form";
+        }
+        grid-gap: 3vw;
+        padding: 15vh 12vw 15vh 12vw;
+        .contact-form{
+            @media @tablet-portrait{
+                grid-area: Form;
+            }
+            color: white;
+            display: grid;
+            height: 45vh;
+            width: 100%;
+            grid-column-gap: 15px;
+            grid-template-areas: "lname lname" "iname iname" "lemail lphone"
+            "iemail iphone" "lmessage lmessage" "imessage imessage" "imessage imessage";
+            label{
+                padding-top: 10px;
+                font-size: 1.6rem;
+                font-family: @principal-font;
+            }
+            input, textarea{
+                font-size: 1.6rem;
+                width: 100%;
+                color: white;
+                border: none;
+                background-color: transparent;
+                border-bottom: 2px solid white;
+            }
+            .label-name{
+                grid-area: lname;
+            }
+            .input-name{
+                grid-area: iname;
+            }
+            .label-message{
+                grid-area: lmessage;
+            }
+            .input-message{
+                height: 100px;
+                grid-area: imessage;
+            }
+            .contact-button{
+                margin-top: 35px;
+                .button-design();
+            }
+        }
+        .contact-info{
+            @media @tablet-portrait{
+                grid-area: Text;
+            }
+            color: white;
+            font-family: @principal-font;
+            @media @tablet-portrait{
+                text-align: center;
+            }
+            .contact-title{
+                text-transform: uppercase;
+                font-size: 4rem;
+                margin: 0;
+                @media @tablet-landscape{
+                    font-size: 3.4rem;
+                }
+            }
+            .contact-text{
+                margin-top: 6vh;
+                font-size: 1.8rem;
+                @media @tablet-landscape{
+                    font-size: 1.6rem;
+                }
+            }
+            .contact-phone{
+                margin-top: 4vh;
+                font-size: 4rem;
+                @media @tablet-landscape{
+                    font-size: 3.4rem;
+                }
+            }
+        }
+    }
+}
