@@ -1,0 +1,49 @@
+.video{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    @media @tablet-portrait{
+        height: 85vh;
+    }
+    @media @phone-landscape{
+        height: 65vh;
+    }
+    .video-header{
+        width: 100%;
+        padding: 0 2.5vw;
+        height: 15vh;
+        background-image: url(../assets/images/principalBackground.png);
+        .all-center;
+        @media @tablet-portrait{
+            height: 25vh;
+        }
+        .video-title{
+            text-transform: uppercase;
+            font-family: @title-font;
+            font-size: 4rem;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .video-container{
+        width: 100%;
+        height: 85vh;
+        padding: 10vh 20vw 0 20vw;
+        @media @tablet-landscape{
+            padding: 10vh 10vw 0 10vw;
+        }
+        @media @tablet-portrait{
+            height: 70vh;
+            padding: 7.5vh 10vw 0 10vw;
+        }
+        @media @phone-landscape{
+            height: 40vh;
+            padding: 2.5vh 2.5vw 0 2.5vw;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
