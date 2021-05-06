@@ -1,4 +1,6 @@
-# Título del Proyecto
+# 2NEL
+
+Plataforma que conecta emprendedores con freelancers e inversores, permite a inversores encontrar emprendimientos donde invertir, y a freelancers donde poder trabajar.
 
 Aquí se desarrolla la landing page del grupo Minka del curso de aplicaciones web.
 
