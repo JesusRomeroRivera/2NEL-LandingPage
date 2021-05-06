@@ -36,7 +36,7 @@ Grupo Minka, formado por los integrantes:
 
 - Dana Vallejos
 - Jesús Romero
-- Sebastian Hernández
+- René Poertolas
 - Emmanuel Ticona
 - Gabriel Vásquez
 
